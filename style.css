@@ -1,0 +1,19 @@
+:root {
+    --maincolor: #0D629A;
+    --mainsecond: #C3E7FF;
+    --gray: rgba(0, 0, 0, 0.6);
+    --black: #000000;
+    --white: #ffffff;
+  }
+
+  /* custom blobal styles */
+
+  .custom-container {
+    max-width: 95%;
+    margin: 0 auto; /* Centers the container */
+  }
+
+  .background-main {
+    background-color: var(--maincolor);
+    color: var(--white);
+  }
