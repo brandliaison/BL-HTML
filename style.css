@@ -129,7 +129,7 @@ p {
 }
 
 #become-partner .uk-offcanvas-bar {
-  width: 80%; /* Set width to 80% */
+  width: 30%; /* Set width to 80% */
 }
 
 .mobile-slide-becomepartner-main .radio-button-idv {
@@ -182,5 +182,9 @@ p {
 
   .footericonimages-main {
     flex-wrap: wrap;
+  }
+
+  #become-partner .uk-offcanvas-bar {
+    width: 80%; /* Set width to 80% */
   }
 }

@@ -156,6 +156,15 @@
     color: black;
 }
 
+.service-body .service-downloadbutton {
+    display: none;
+    padding: 0px 15px;
+}
+
+select option {
+    max-width: 100px !important;
+}
+
 @media screen and (max-width: 576px) {
     .navbar-main-logo img{
         max-width: 150px !important;
@@ -163,5 +172,26 @@
 
     .home-main-container .home-banner {
         max-width: 95vw;
+    }
+
+    .service-body .service-content-section .lefttabs-container {
+        display: none;
+    }
+
+    .service-body .service-content-section .download-brochures {
+        display: none;
+    }
+
+    .service-blogserc-style {
+        padding: 0px;
+    }
+
+    .service-blogserc-style .service-container-servicepage {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .service-body .service-downloadbutton {
+        display: flex;
     }
 }
