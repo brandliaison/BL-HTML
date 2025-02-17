@@ -3,7 +3,15 @@
     --mainsecond: #C3E7FF;
     --gray: rgba(0, 0, 0, 0.6);
     --black: #000000;
+    --graytwo: #f5f5f5;
     --white: #ffffff;
+  }
+
+  /* all heading and global styles */
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: var(--black);
+    margin: 0;
   }
 
   /* custom blobal styles */
@@ -16,4 +24,74 @@
   .background-main {
     background-color: var(--maincolor);
     color: var(--white);
+  }
+
+  .icon-white {
+    color: var(--white);
+  }
+
+  .icon-blue {
+    color: var(--maincolor);
+  }
+
+  .main-color {
+    color: var(--maincolor);
+  }
+
+  .main-second {
+    color: var(--mainsecond);
+  }
+
+  .gray-color {
+    color: var(--gray);
+  }
+
+  .color-white {
+    color: var(--white);
+  }
+
+  .main-backround-color {
+    background-color: var(--maincolor);
+  }
+
+  .mainsecond-background-color {
+    background-color: var(--mainsecond);
+  }
+
+  .graytwo-background-color {
+    background-color: var(--graytwo);
+  }
+
+  /* buttons style */
+  
+  .border-button {
+    border: 2px solid var(--maincolor);
+    background-color: transparent;
+    color: var(--maincolor);
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .border-button:hover {
+    background-color: var(--maincolor);
+    color: var(--white);
+  }
+
+  .solid-button {
+    border: 2px solid var(--maincolor) !important;
+    border: none;
+    background-color: var(--maincolor);
+    color: var(--white);
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .solid-button:hover {
+    border-color: var(--maincolor);
+    background-color: var(--white);
+    color: var(--maincolor);
   }
