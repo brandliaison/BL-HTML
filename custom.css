@@ -95,7 +95,7 @@
 .service-body .service-content-section .lefttabs-container {
     border: 2px solid var(--maincolor);
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     overflow: hidden;
 }
 
@@ -144,4 +144,24 @@
 .footer-container .footericonimages {
     display: flex;
     align-items: stretch;
+}
+
+.main-menu select{
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+}
+
+.main-menu select option {
+    color: black;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-main-logo img{
+        max-width: 150px !important;
+    }
+
+    .home-main-container .home-banner {
+        max-width: 95vw;
+    }
 }
