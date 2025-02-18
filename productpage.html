@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/custom.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="navbar">
+      <div class="navbar-top background-main">
+        <div class="uk-container-expand custom-container">
+          <div class="uk-flex uk-flex-between uk-flex-middle">
+            <div class="socilamedia-navigation">
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-facebook icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-x-twitter icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-instagram icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-youtube icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-pinterest icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-linkedin icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-share-nodes icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+            </div>
+            <div class="main-menu">
+              <ul class="uk-nav uk-nav-default uk-flex">
+                <li class="display-desktop"><a href="#">About</a></li>
+                <li class="display-desktop">
+                  <a href="/services.html">Services</a>
+                </li>
+                <li class="display-desktop">
+                  <a href="/notifications.html">Notifications</a>
+                </li>
+                <li class="display-desktop">
+                  <a href="/downloads.html">Downloads</a>
+                </li>
+                <li class="display-desktop">
+                  <a href="/mandatory-products.html">Mandatory Products</a>
+                </li>
+                <li class="display-desktop"><a href="/blogs.html">Blogs</a></li>
+                <li class="display-desktop"><a href="#">Contact</a></li>
+                <li>
+                  <a href="#become-partner" uk-toggle
+                    ><i class="fa-solid fa-handshake-angle"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-earth-asia"></i>
+                    <select id="example-select" name="options">
+                      <option selected value="English">EN</option>
+                      <option value="Hindi">HN</option>
+                      <option value="French">FR</option>
+                      <option value="Espanich">ES</option>
+                    </select></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="navbar-main uk-padding-small uk-padding-remove-horizontal"
+        uk-sticky
+      >
+        <div class="uk-container-expand custom-container">
+          <div
+            class="uk-flex uk-flex-between uk-flex-middle footericonimages-main"
+          >
+            <div class="navbar-main-logo">
+              <a href="/"><img src="./images/logo.webp" alt="Logo" /></a>
+            </div>
+            <div class="navbar-main-auth uk-flex uk-flex-middle">
+              <div
+                class="services-container uk-flex uk-flex-middle display-desktop"
+              >
+                <div class="icons">
+                  <img
+                    src="images/icons/services-CAMsT_6u.svg"
+                    class="uk-width-1-1"
+                  />
+                </div>
+                <div class="text uk-padding-small">
+                  <h5>Services</h5>
+                  <p>Product services</p>
+                </div>
+              </div>
+              <div
+                class="notifications-container uk-flex uk-flex-middle display-desktop"
+              >
+                <div class="icons">
+                  <img
+                    src="images/icons/notifications-CFzD_Wuy.svg"
+                    class="uk-width-1-1"
+                  />
+                </div>
+                <div class="text uk-padding-small">
+                  <h5>Notifications</h5>
+                  <p>Policy Update</p>
+                </div>
+              </div>
+              <div class="auth-icons">
+                <span
+                  class="uk-padding-small"
+                  uk-toggle="target: #loginform-mobileslider"
+                  ><i class="fa-solid fa-lock icon-blue"></i
+                ></span>
+                <span class="uk-padding-small" uk-toggle="target: #modal-search"
+                  ><i class="fa-solid fa-magnifying-glass icon-blue"></i
+                ></span>
+                <span
+                  class="uk-padding-small"
+                  uk-toggle="target: #offcanvas-overlay"
+                  ><i class="fa-solid fa-bars icon-blue"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile slide menu -->
+
+    <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar mobile-menu">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul>
+          <li><a href="#" class="uk-text-bold">About</a></li>
+          <li>
+            <a href="/services.html" class="uk-text-bold">Services</a>
+          </li>
+          <li>
+            <a href="/notifications.html" class="uk-text-bold">Notifications</a>
+          </li>
+          <li><a href="/downloads.html" class="uk-text-bold">Downloads</a></li>
+          <li>
+            <a href="/mandatory-products.html" class="uk-text-bold"
+              >Mandatory Products</a
+            >
+          </li>
+          <li><a href="/blogs.html" class="uk-text-bold">Blogs</a></li>
+          <li><a href="#" class="uk-text-bold">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- mobile slide search  -->
+
+    <div id="modal-search" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <div class="uk-margin">
+          <input
+            class="uk-input uk-width-1-1"
+            type="text"
+            placeholder="Search..."
+            id="search-input"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile slide login  -->
+
+    <div id="loginform-mobileslider" uk-offcanvas="flip: true; overlay: true">
+      <div class="uk-offcanvas-bar mobile-menu">
+        <div class="mobile-slide-becomepartner-main">
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
+          <h4 class="main-color uk-text-bold uk-margin-bottom">Register</h4>
+          <form action="#" method="POST">
+            <div class="sideform-input">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name*"
+                required
+              />
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email*"
+                required
+              />
+            </div>
+
+            <div class="sideform-phone">
+              <select id="countrycode" name="countrycode" required>
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+                <option value="+91">+91 (India)</option>
+                <!-- Add more country codes as needed -->
+              </select>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="password"
+                id="field-of-expertise"
+                name="field-of-expertise"
+                placeholder="Password"
+                required
+              />
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="password"
+                id="years-of-experience"
+                name="years-of-experience"
+                placeholder="Confirm Password"
+              />
+            </div>
+
+            <button class="solid-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile slide become partner form -->
+
+    <div id="become-partner" uk-offcanvas="flip: true; overlay: true">
+      <div class="uk-offcanvas-bar">
+        <div class="mobile-slide-becomepartner-main">
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
+          <h4 class="main-color uk-text-bold">Partner With US</h4>
+          <h5 class="gray-color uk-margin-top uk-text-bold">Partner Type*</h5>
+          <form action="#" method="POST">
+            <div class="radio-button-idv">
+              <input
+                type="radio"
+                id="service-partner"
+                name="partner-type"
+                value="service"
+                required
+              /><br />
+              <label for="partner-type">Service Partner</label>
+              <input
+                type="radio"
+                id="channel-partner"
+                name="partner-type"
+                value="channel"
+                required
+              /><br />
+              <label for="service-partner">Channel Partner</label>
+            </div>
+            <i class="gray-color uk-text-small"
+              >Become Certification/Compliance Service Associate</i
+            >
+            <h5 class="gray-color uk-margin-top uk-text-bold">Entity Type*</h5>
+            <div class="radio-button-idv uk-margin-bottom">
+              <input
+                type="radio"
+                id="organization"
+                name="marketing-associate"
+                value="organization"
+                required
+              /><br />
+              <label for="organization">Organization</label>
+              <input
+                type="radio"
+                id="individual"
+                name="marketing-associate"
+                value="individual"
+                required
+              />
+              <label for="individual">Individual</label>
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name*"
+                required
+              />
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email*"
+                required
+              />
+            </div>
+
+            <div class="sideform-phone">
+              <select id="countrycode" name="countrycode" required>
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+                <option value="+91">+91 (India)</option>
+                <!-- Add more country codes as needed -->
+              </select>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="text"
+                id="field-of-expertise"
+                name="field-of-expertise"
+                placeholder="Field Of Expertise"
+                required
+              />
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="text"
+                id="years-of-experience"
+                name="years-of-experience"
+                placeholder="Years Of Experience"
+              />
+            </div>
+
+            <button class="solid-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- product page body -->
+
+    <div class="service-body product-page">
+      <div
+        class="servicemain-container uk-padding uk-padding-remove-horizontal"
+      >
+        <div class="uk-container-expand custom-container">
+          <div class="uk-grid-match uk-grid-large" uk-grid>
+            <div class="service-content-section uk-width-1-1 uk-margin-top">
+              <div
+                class="uk-width-1-1@s uk-width-2-5@m uk-width-1-3@l service-left-tab"
+              >
+                <p>
+                  <span><a href="#"> Home </a></span>
+                  <i
+                    class="fa-solid fa-chevron-right uk-padding-small uk-padding-remove-vertical gray-color"
+                  ></i>
+                  <span><a href="#" class="gray-color"> Services </a></span>
+                </p>
+                <img
+                  src="./images/productimage/one.webp"
+                  class="uk-width-1-1 uk-margin-top"
+                />
+              </div>
+              <div
+                class="uk-width-1-1@s uk-width-3-5@m uk-width-2-3@l service-right-content uk-padding"
+              >
+                <p>Product Name: <b>Electronics Games (Video)</b></p>
+                <p>Product Categories: <b>Electronic & IT Goods</b></p>
+                <p>Required Certifications:</p>
+                <div class="uk-flex uk-flex-wrap uk-margin-top">
+                  <div
+                    class="required-certifications-box uk-border-rounded uk-text-center uk-display-inline-block uk-box-shadow-large uk-padding-small uk-margin-right uk-margin-bottom"
+                  >
+                    <img src="./images/cat-icons/one.webp" />
+                    <p
+                      class="main-color uk-margin-top uk-text-bold uk-text-small"
+                    >
+                      BIS / CRS Registration
+                    </p>
+                  </div>
+                  <div
+                    class="required-certifications-box uk-border-rounded uk-text-center uk-display-inline-block uk-box-shadow-large uk-padding-small uk-margin-right uk-margin-bottom"
+                  >
+                    <img src="./images/cat-icons/one.webp" />
+                    <p
+                      class="main-color uk-margin-top uk-text-bold uk-text-small"
+                    >
+                      BIS / CRS Registration
+                    </p>
+                  </div>
+                  <div
+                    class="required-certifications-box uk-border-rounded uk-text-center uk-display-inline-block uk-box-shadow-large uk-padding-small uk-margin-right uk-margin-bottom"
+                  >
+                    <img src="./images/cat-icons/one.webp" />
+                    <p
+                      class="main-color uk-margin-top uk-text-bold uk-text-small"
+                    >
+                      BIS / CRS Registration
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  Share Product:
+                  <span class="main-color uk-text-large"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></span>
+                </p>
+              </div>
+            </div>
+            <div class="uk-margin-remove">
+              <p class="uk-text-small">
+                The gaming era has evolved with constant growth and the advent
+                of recurring technological innovations, leading to more
+                interactive and immersive gaming experiences. There are
+                electronic video games available nowadays that can be played on
+                a variety of platforms as well as devices. Be it cell phones,
+                home gaming consoles, or personal computers, all are easily
+                compatible with various electronic video games. Owing to the
+                many benefits these come with, they have become increasingly
+                popular and much in demand.
+              </p>
+              <p class="uk-text-small uk-margin-small-top">
+                However, to sell electronic video games easily in the Indian
+                market, it is important to abide by certain mandatory
+                compliances and regulations such as gaining a BIS certificate.
+                Know why it is an important compliance for producers and
+                importers.
+              </p>
+              <ul>
+                <li>The Bureau of Indian Standards (BIS) has listed products like electronic video games under the Compulsory Registration Scheme (CRS) to be mandatorily tested and certified before being sold in the Indian market.</li>
+                <li>If producers and manufacturers fail to comply with these necessary regulations, they can get their licenses canceled by the authorities or even face penalties like fines.</li>
+                <li>Consumers are continuously looking for BIS-certified products, as it ensures that these have been tested and certified for their safety and performance parameters. </li>
+                <li>By timely compliance with BIS registration, producers and manufacturers can gain a significant boost in their sales as well as market recognition and brand reputation.</li>
+              </ul>
+              <p class="uk-text-small">Get in touch with Brand Liaison, your <span class="main-color">top BIS CRS consultant</span>, and get your compliance procedures completed quickly and conveniently. After all, providing reliable and trusted results is our forte!</p>
+              <h4 class="uk-margin-top">
+                <a href="#" class="uk-text-bold main-color uk-margin-left"
+                  ><i class="fa-solid fa-chevron-left"></i> Back
+                </a>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+
+    <div
+      class="footer-container uk-padding uk-padding-remove-horizontal main-backround-color"
+    >
+      <div class="uk-container-expand custom-container">
+        <div class="uk-container">
+          <div
+            class="uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-medium"
+            uk-grid
+          >
+            <!-- Column 1 -->
+            <div>
+              <h5 class="color-white uk-text-bold">Services</h5>
+              <ul class="uk-list">
+                <li><a href="#">Bureau of Indian Standards</a></li>
+                <li><a href="#">Wireless & Telecommunication</a></li>
+                <li><a href="#">lExtended Producer Responsibilityink</a></li>
+                <li><a href="#">Bureau of Energy Efficiency</a></li>
+                <li>
+                  <a href="#"
+                    >Ministry of Consumer Affairs, Food and Public
+                    Distribution</a
+                  >
+                </li>
+                <li><a href="#">Intellectual Propert</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+              <h5 class="color-white uk-text-bold">Quick Links</h5>
+              <ul class="uk-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+              <h5 class="color-white uk-text-bold">Important Links</h5>
+              <ul class="uk-list">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Website Disclaimer</a></li>
+                <li><a href="#">Knowledge Base</a></li>
+                <li><a href="#">Holiday List</a></li>
+                <li><a href="#">Partner With Us</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div>
+              <h5 class="color-white uk-text-bold">Important Links</h5>
+              <div class="uk-flex uk-margin-top">
+                <i
+                  class="fa-solid fa-location-dot uk-text-default color-white uk-padding-small uk-padding-remove-top uk-padding-remove-left"
+                ></i>
+                <p class="color-white uk-text-small">
+                  Brand Liaison India Private Limited 110, Sharma Complex A-2,
+                  Guru Nanak Pura, Laxmi Nagar Delhi - 110092, India
+                  <br /><br />
+                  Nearest Metro Station: Nirman Vihar - Gate No. 1 / Skywalk
+                  Exit (150 meters / 2 minutes walk)
+                </p>
+              </div>
+              <div class="uk-flex">
+                <i
+                  class="fa-regular fa-envelope uk-text-default color-white uk-padding-small uk-padding-remove-top uk-padding-remove-left"
+                ></i>
+                <p class="color-white uk-text-small">info@bl-india.com</p>
+              </div>
+              <div class="uk-flex">
+                <i
+                  class="fa-solid fa-mobile-screen uk-text-default color-white uk-padding-small uk-padding-remove-top uk-padding-remove-left"
+                ></i>
+                <p class="color-white uk-text-small">
+                  +91-8130615678 +91-9810363988
+                </p>
+              </div>
+              <div class="uk-flex">
+                <i
+                  class="fa-solid fa-phone uk-text-default color-white uk-padding-small uk-padding-remove-top uk-padding-remove-left"
+                ></i>
+                <p class="color-white uk-text-small">+91-11-42686678</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="uk-flex uk-flex-between footericonimages-main">
+            <div class="footericonimages">
+              <img src="./images/certicon1.webp" class="uk-margin-right" />
+              <img src="./images/certicon2.webp" class="uk-margin-right" />
+              <img src="./images/certicon3.webp" class="uk-margin-right" />
+            </div>
+            <div class="footericonimages">
+              <img src="./images/certicon4.webp" class="uk-margin-left" />
+              <img src="./images/certicon5.webp" class="uk-margin-left" />
+            </div>
+          </div>
+
+          <div class="uk-text-center uk-margin-top">
+            <p class="uk-text-small color-white">
+              © 2025 Brand Liaison. All rights reserved.
+            </p>
+            <div>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-facebook icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-x-twitter icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-instagram icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-youtube icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-pinterest icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-linkedin icon-white uk-padding-small uk-padding-remove-left"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+</html>

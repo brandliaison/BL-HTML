@@ -194,4 +194,13 @@ select option {
     .service-body .service-downloadbutton {
         display: flex;
     }
+
+    .product-page .service-right-content {
+        padding: 0px;
+        margin-top: 15px;
+    }
+
+    .product-page .service-right-content .uk-flex {
+        justify-content: center;
+    }
 }
