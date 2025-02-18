@@ -168,12 +168,8 @@ p {
 }
 
 #loginform-mobileslider .uk-offcanvas-bar {
-  width: 100%; /* Set width to 80% */
+  width: 30%; /* Set width to 80% */
 }
-
-/* table style */
-
-
 
 @media screen and (max-width: 576px) {
   .display-desktop {
@@ -190,5 +186,9 @@ p {
 
   #become-partner .uk-offcanvas-bar {
     width: 80%; /* Set width to 80% */
+  }
+
+  #loginform-mobileslider .uk-offcanvas-bar {
+    width: 100%; /* Set width to 80% */
   }
 }
