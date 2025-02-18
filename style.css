@@ -53,7 +53,7 @@ p {
 }
 
 .color-white {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .main-backround-color {
@@ -170,6 +170,10 @@ p {
 #loginform-mobileslider .uk-offcanvas-bar {
   width: 100%; /* Set width to 80% */
 }
+
+/* table style */
+
+
 
 @media screen and (max-width: 576px) {
   .display-desktop {
