@@ -78,6 +78,7 @@ p {
   cursor: pointer;
   width: 100%;
   transition: background-color 0.3s ease;
+  max-width: max-content;
 }
 
 .border-button:hover {
@@ -94,6 +95,9 @@ p {
   cursor: pointer;
   width: 100%;
   transition: background-color 0.3s ease;
+  max-width: max-content;
+  box-shadow: -2px 4px 8px 0px #00000066;
+  font-weight: 700;
 }
 
 .solid-button:hover {
@@ -169,6 +173,23 @@ p {
 
 #loginform-mobileslider .uk-offcanvas-bar {
   width: 30%; /* Set width to 80% */
+}
+
+.uk-slider-items > div.client-logos {
+  padding: 10px;
+}
+
+.uk-slider-items div.client-logos img {
+  filter: grayscale(1);
+  padding: 0px 20px;
+  border: 1px solid rgba(128, 128, 128, 0.329);
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: -4px 2px 4px 0px #00000038;
+}
+
+.uk-slider-items > div.associtae-with-logo {
+  padding: 20px 8vw;
 }
 
 @media screen and (max-width: 576px) {

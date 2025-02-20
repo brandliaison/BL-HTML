@@ -189,6 +189,53 @@ select option {
     box-sizing: border-box;
 }
 
+.director-about {
+    background-image: url(./images/background/one.jpg);
+    background-size: cover;
+}
+
+.director-about img {
+    border: 10px solid white;
+    box-shadow: 0px 5px 7px 7px #00000026;
+}
+
+.director-about i {
+    font-size: 60px;
+    color: var(--maincolor);
+}
+
+.testmonial-main a.uk-position-center-right.uk-position-small.uk-icon.uk-slidenav-next.uk-slidenav {
+    background-color: #0d629a;
+    font-weight: 700;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    position: relative !important;
+    bottom: 45px !important;
+    left: 60px !important;
+}
+
+.testmonial-main a.uk-position-center-left.uk-position-small.uk-icon.uk-slidenav-previous.uk-slidenav {
+    background-color: #0d629a;
+    font-weight: 700;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    position: relative !important;
+    bottom: 0px !important;
+    margin-left: 0px;
+}
+
 @media screen and (max-width: 576px) {
     .navbar-main-logo img{
         max-width: 150px !important;
