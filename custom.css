@@ -248,6 +248,12 @@ select option {
     transform: rotate(180deg);
 }
 
+.download-calender {
+    padding: 20px;
+    border: 1px solid var(--maincolor);
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 576px) {
     .navbar-main-logo img{
         max-width: 150px !important;
