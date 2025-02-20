@@ -286,4 +286,10 @@ select option {
     .product-page .service-right-content .uk-flex {
         justify-content: center;
     }
+
+    .home-main-container {
+        height: 50vh;
+        background-position: left;
+        box-shadow: inset 800px 0px #ffffff36;
+    }
 }
