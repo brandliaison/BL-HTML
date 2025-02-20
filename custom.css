@@ -236,6 +236,18 @@ select option {
     margin-left: 0px;
 }
 
+.uk-open>.uk-accordion-title::before {
+    background-image: url('https://icons.veryicon.com/png/o/miscellaneous/simple-and-round-line-mark/down-arrow-56.png');
+    background-size: contain;
+    transform: rotate(0deg);
+}
+
+.uk-accordion-title::before {
+    background-image: url('https://icons.veryicon.com/png/o/miscellaneous/simple-and-round-line-mark/down-arrow-56.png');
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
 @media screen and (max-width: 576px) {
     .navbar-main-logo img{
         max-width: 150px !important;
