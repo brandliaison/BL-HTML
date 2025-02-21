@@ -254,6 +254,21 @@ select option {
     border-radius: 5px;
 }
 
+.galleryimage-container {
+    position: relative;
+}
+
+.galleryimage-container p {
+    position: absolute;
+    z-index: 1;
+    bottom: -20px;
+    padding: 10px;
+    background: white;
+    width: 100%;
+    background: #ffffff7d;
+    text-align: center;
+}
+
 @media screen and (max-width: 576px) {
     .navbar-main-logo img{
         max-width: 150px !important;
