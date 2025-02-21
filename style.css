@@ -192,11 +192,11 @@ p {
   padding: 20px 8vw;
 }
 
-@media screen and (max-width: 576px) {
-  .display-desktop {
-    display: none;
-  }
+.mobile-menubar {
+  display: none;
+}
 
+@media screen and (max-width: 576px) {
   .display-mobile {
     display: inline-block;
   }
@@ -211,5 +211,15 @@ p {
 
   #loginform-mobileslider .uk-offcanvas-bar {
     width: 80%; /* Set width to 80% */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menubar {
+    display: inline-block;
+  }
+
+  .display-desktop {
+    display: none;
   }
 }
