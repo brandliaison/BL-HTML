@@ -215,13 +215,24 @@ p {
 }
 
 .home-knoeprocess-container img{
-  width: 15vw;
+  width: 100%;
+}
+
+.home-knoeprocess-container .uk-text-center {
+  padding: 20px;
+}
+
+.home-knoeprocess-container .uk-container.uk-padding-remove {
+  background-image: url(./images/background.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
 }
 
 .side-fix-queryform {
   position: fixed;
   right: 0px;
-  top: 50%;
+  top: 30%;
   width: 1.5vw;
   height: 11vw;
   background-color: #0d629a;
@@ -233,8 +244,34 @@ p {
   text-align: center;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  box-shadow: 1px 1px 11px 3px #0000007d;
+  box-shadow: 1px 1px 8px 3px #0000002e;
   cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-totop-button {
+  padding: 10px;
+  width: 70px;
+  right: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: var(--maincolor);
+  color: white;
+  bottom: 4vw;
+  z-index: 1;
+  box-shadow: 1px 1px 8px 3px #0000002e;
+}
+
+.scroll-totop-button:hover {
+  background-color: var(--maincolor);
+  color: var(--white);
+}
+
+.scroll-totop-button i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 576px) {
@@ -254,8 +291,32 @@ p {
     width: 80%; /* Set width to 80% */
   }
 
+  .scroll-totop-button {
+    bottom: 11vh;
+  }
+
+  .side-fix-queryform {
+    width: 4.5vw;
+    height: 35vw;
+    font-size: 3vw;
+  }
+
+  .home-knoeprocess-container .uk-container.uk-padding-remove {
+    background-image: none;
+  }
+
+  .mainsecond-background-color .one.uk-flex.uk-flex-middle {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
   .number-infomain {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h3.main-color.uk-text-bold.uk-margin-left::after {
+    display: none;
   }
 }
 

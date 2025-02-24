@@ -22,6 +22,7 @@
     <title>Document</title>
   </head>
   <body>
+    
     <!-- navigation bar -->
 
     <div class="navbar">
@@ -778,19 +779,21 @@
         >
           <div class="one uk-flex uk-flex-middle">
             <img src="./images/incoming-call.png" class="uk-margin-right" />
+            <h3 class="main-color uk-text-bold uk-margin-right margin-to uk-margin-small-top">
+              +91-8130615678 <br />
+              +91-9250056788
+            </h3>
             <div class="uk-flex">
-              <h3 class="main-color uk-text-bold uk-margin-right">
-                +91-8130615678 <br />
-                +91-9250056788
-              </h3>
-              <h3 class="main-color uk-text-bold uk-margin-left">
+              <h3 class="main-color uk-text-bold uk-margin-left margin-to uk-margin-small-top">
                 REQUEST A SCHEDULE <br />
                 FOR FREE CONSULTATION
               </h3>
             </div>
           </div>
-          <div class="three">
-            <button class="solid-button">Connect With Us</button>
+          <div class="three margin-to uk-margin-small-top">
+            <button class="solid-button" uk-toggle="target: #connect-queryform">
+              Connect With Us
+            </button>
           </div>
         </div>
       </div>
@@ -823,9 +826,12 @@
                   alt="Image 1"
                   class="uk-border-rounded"
                 />
-                <h4 class="uk-margin-small-top">Heading 1</h4>
+                <h4 class="uk-margin-small-top uk-margin-small-top">
+                  Registration
+                </h4>
                 <p class="uk-text-small">
-                  This is some descriptive text for section 1.
+                  Sign up on our portal and provide the necessary details to
+                  initiate the process efficiently.
                 </p>
               </div>
 
@@ -836,9 +842,12 @@
                   alt="Image 2"
                   class="uk-border-rounded"
                 />
-                <h4 class="uk-margin-small-top">Heading 2</h4>
+                <h4 class="uk-margin-small-top uk-margin-small-top">
+                  Registration
+                </h4>
                 <p class="uk-text-small">
-                  This is some descriptive text for section 2.
+                  Sign up on our portal and provide the necessary details to
+                  initiate the process efficiently.
                 </p>
               </div>
 
@@ -849,9 +858,12 @@
                   alt="Image 3"
                   class="uk-border-rounded"
                 />
-                <h4 class="uk-margin-small-top">Heading 3</h4>
+                <h4 class="uk-margin-small-top uk-margin-small-top">
+                  Registration
+                </h4>
                 <p class="uk-text-small">
-                  This is some descriptive text for section 3.
+                  Sign up on our portal and provide the necessary details to
+                  initiate the process efficiently.
                 </p>
               </div>
 
@@ -862,9 +874,12 @@
                   alt="Image 4"
                   class="uk-border-rounded"
                 />
-                <h4 class="uk-margin-small-top">Heading 4</h4>
+                <h4 class="uk-margin-small-top uk-margin-small-top">
+                  Registration
+                </h4>
                 <p class="uk-text-small">
-                  This is some descriptive text for section 4.
+                  Sign up on our portal and provide the necessary details to
+                  initiate the process efficiently.
                 </p>
               </div>
 
@@ -875,9 +890,12 @@
                   alt="Image 5"
                   class="uk-border-rounded"
                 />
-                <h4 class="uk-margin-small-top">Heading 5</h4>
+                <h4 class="uk-margin-small-top uk-margin-small-top">
+                  Registration
+                </h4>
                 <p class="uk-text-small">
-                  This is some descriptive text for section 5.
+                  Sign up on our portal and provide the necessary details to
+                  initiate the process efficiently.
                 </p>
               </div>
             </div>
@@ -1276,7 +1294,7 @@
                   <option value="Hindi">Hindi</option>
                   <option value="French">French</option>
                   <option value="Spanish">Spanish</option>
-              </select>
+                </select>
               </div>
             </div>
 
@@ -1288,7 +1306,7 @@
                   <option value="Hindi">Hindi</option>
                   <option value="French">French</option>
                   <option value="Spanish">Spanish</option>
-              </select>
+                </select>
               </div>
             </div>
 
@@ -1297,6 +1315,163 @@
         </div>
       </div>
     </div>
+
+    <!-- side querty form  -->
+
+    <div class="side-fix-queryform" uk-toggle="target: #fix-queryform">
+      Request Brochure
+      <i class="fa-regular fa-circle-down uk-margin-small-top"></i>
+    </div>
+
+    <div id="fix-queryform" uk-offcanvas="flip: true; overlay: true">
+      <div class="uk-offcanvas-bar mobile-menu">
+        <div class="mobile-slide-becomepartner-main">
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
+          <h4 class="main-color uk-text-bold uk-margin-bottom">
+            Request Brochure
+          </h4>
+          <form action="#" method="POST">
+            <div class="sideform-input">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name*"
+                required
+              />
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email*"
+                required
+              />
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Company"
+                required
+              />
+            </div>
+
+            <div class="sideform-phone">
+              <select id="countrycode" name="countrycode" required>
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+                <option value="+91">+91 (India)</option>
+                <!-- Add more country codes as needed -->
+              </select>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+
+            <div class="sideform-input">
+              <div class="uk-form-controls">
+                <select class="uk-select">
+                  <option value="" disabled selected hidden>Service*</option>
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="French">French</option>
+                  <option value="Spanish">Spanish</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="sideform-input">
+              <div class="uk-form-controls">
+                <select class="uk-select">
+                  <option value="" disabled selected hidden>Source*</option>
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="French">French</option>
+                  <option value="Spanish">Spanish</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="solid-button" type="submit">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- connect form -->
+
+    <div id="connect-queryform" uk-offcanvas="flip: true; overlay: true">
+      <div class="uk-offcanvas-bar mobile-menu">
+        <div class="mobile-slide-becomepartner-main">
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
+          <h4 class="main-color uk-text-bold uk-margin-bottom">
+            Schedule a Call
+          </h4>
+          <form action="#" method="POST">
+            <div class="sideform-input">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name*"
+                required
+              />
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email*"
+                required
+              />
+            </div>
+
+            <div class="sideform-input">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Company"
+                required
+              />
+            </div>
+
+            <div class="sideform-phone">
+              <select id="countrycode" name="countrycode" required>
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+                <option value="+91">+91 (India)</option>
+                <!-- Add more country codes as needed -->
+              </select>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+
+            <div class="sideform-input">
+              <input type="date" placeholder="Select a date" />
+            </div>
+
+            <button class="solid-button" type="submit">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- scroll to top button -->
+
+    <a
+      href="#"
+      id="scrollToTop"
+      uk-scroll
+      class="scroll-totop-button uk-icon-button uk-position-fixed uk-position-bottom-right"
+      style="display: none"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
 
     <!-- footer section -->
 
@@ -1450,6 +1625,23 @@
       </div>
     </div>
   </body>
+
+  <!-- chat script -->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/66cd972650c10f7a00a0d7dc/1i69hcrlt";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 
   <!-- my script is here -->
   <script src="./script.js"></script>

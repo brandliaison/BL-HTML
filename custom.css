@@ -71,12 +71,12 @@
     border-bottom-right-radius: 50px !important;
 }
 
-.home-knoeprocess-container {
+/* .home-knoeprocess-container {
     background-image: url('./images/background.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
+} */
 
 .home-blog-container .blog-main {
     border-radius: 15px;
@@ -92,7 +92,6 @@
 }
 
 .home-knoeprocess-container .uk-container.uk-padding-remove {
-    margin: 0px;
     max-width: 100%;
 }
 
@@ -311,7 +310,7 @@ h3.main-color.uk-text-bold.uk-margin-left::after {
     }
 
     .home-main-container .home-banner {
-        max-width: 95vw;
+        max-width: 95vw !important;
     }
 
     .service-body .service-content-section .lefttabs-container {
