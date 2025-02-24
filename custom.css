@@ -301,6 +301,10 @@ h3.main-color.uk-text-bold.uk-margin-left::after {
     top: 0px;
 }
 
+.home-blog-container .uk-container.uk-margin-small-top {
+    max-width: 100%;
+}
+
 @media screen and (max-width: 576px) {
     .navbar-main-logo img{
         max-width: 150px !important;

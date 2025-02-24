@@ -148,12 +148,24 @@ p {
   color: var(--gray);
 }
 
-.mobile-slide-becomepartner-main .sideform-input input {
+.mobile-slide-becomepartner-main .sideform-input input, .mobile-slide-becomepartner-main .sideform-input select {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  box-sizing: border-box;
-  border: 1px solid grey;
+  box-sizing: border-box !important;
+  border: 1px solid grey !important;
+}
+
+.mobile-slide-becomepartner-main .sideform-input select {
+  color: var(--gray);
+}
+
+.mobile-slide-becomepartner-main .sideform-input select:focus {
+  color: black;
+}
+
+.mobile-slide-becomepartner-main .sideform-input .uk-select:not([multiple]):not([size]) {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A") !important;
 }
 
 .mobile-slide-becomepartner-main .sideform-phone input {
@@ -196,6 +208,33 @@ p {
 
 .mobile-menubar {
   display: none;
+}
+
+.footer-container .uk-container.uk-padding-remove {
+  max-width: 100% !important;
+}
+
+.home-knoeprocess-container img{
+  width: 15vw;
+}
+
+.side-fix-queryform {
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  width: 1.5vw;
+  height: 11vw;
+  background-color: #0d629a;
+  color: white;
+  padding: 10px;
+  writing-mode: vertical-rl;
+  font-size: 1vw;
+  font-weight: 700;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 1px 1px 11px 3px #0000007d;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 576px) {
