@@ -59,11 +59,26 @@
                   class="fa-brands fa-linkedin icon-white uk-padding-small uk-padding-remove-left"
                 ></i
               ></a>
-              <a href="#"
+              <a href="#" class="shareonsocila" uk-toggle="target: #dropdown-example"
                 ><i
                   class="fa-solid fa-share-nodes icon-white uk-padding-small uk-padding-remove-left"
                 ></i
               ></a>
+
+              <!-- Dropdown Menu -->
+            <div id="dropdown-example" class="uk-padding-remove" style="min-width: auto !important; background: transparent;" uk-dropdown="mode: click">
+              <div class="social-dropdown">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+              </div>
+            </div>
+
             </div>
             <div class="main-menu">
               <ul class="uk-nav uk-nav-default uk-flex">
@@ -376,38 +391,78 @@
 
     <!-- holiday list body -->
 
-    <div class="about-main-container">
-      <div class="uk-container-expand custom-container uk-height-1-1">
-        <div class="uk-text-center uk-margin-top uk-margin-bottom">
-            <h2 class="gray-color uk-text-bold uk-margin-small-bottom uk-margin-large-top">
-              <span class="main-color"> Holiday Calendar </span>
-            </h2>
+    <div class="service-body">
+      <div
+        class="servicemain-container uk-padding uk-padding-remove-horizontal"
+      >
+        <div class="uk-container-expand custom-container">
+
+            <!-- page main heading -->
+
+          <div
+            class="main-haeding-container uk-text-center uk-padding uk-padding-remove-horizontal uk-padding-remove-top uk-padding-remove"
+          >
+            <h1 class="gray-color uk-text-bold uk-padding-small">
+              <span class="main-color">service </span>
+            </h1>
           </div>
-          <div class="uk-container">
-            <div class="uk-grid" uk-grid>
-                <!-- 35% width column -->
-                <div class="uk-width-1-1 uk-width-1-3@m">
-                    <div class="download-calender">
-                        <h5 class="main-color uk-text-bold">List of Holidays</h5>
-                        <p class="text uk-card-small" style="color: red;">Wednesday 26 February 2025</p>
-                        <p class="text uk-card-small" style="color: gray;">Maha Shivaratri</p>
-                        <button class="solid-button uk-margin-large-top"><i class="fa-solid fa-download"></i> Download Holidays List</button>
-                        <button class="solid-button uk-margin-top"><i class="fa-solid fa-calendar-days"></i> Download Calender</button>
-                    </div>
+
+          <!-- page main heading -->
+
+          <div class="uk-grid-match uk-grid-large" uk-grid>
+            <div class="service-content-section uk-width-1-1">
+
+                <!-- service left section -->
+            
+              <div class="uk-width-1-1@s uk-width-1-4@m service-left-tab">
+                <div class="div-sticy-sidefilters">
+                  <div class="download-calender">
+                    <h5 class="main-color uk-text-bold">List of Holidays</h5>
+                    <p class="text uk-card-small" style="color: red">
+                      Wednesday 26 February 2025
+                    </p>
+                    <p class="text uk-card-small" style="color: gray">
+                      Maha Shivaratri
+                    </p>
+                    <button class="solid-button uk-margin-large-top">
+                      <i class="fa-solid fa-download"></i> Download Holidays List
+                    </button>
+                    <button class="solid-button uk-margin-top">
+                      <i class="fa-solid fa-calendar-days"></i> Download Calender
+                    </button>
+                  </div>                  
                 </div>
-    
-                <!-- 65% width column -->
-                <div class="uk-width-1-1 uk-width-2-3@m">
-                    <div class="calender">
-                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt temporibus id, sit beatae reprehenderit, blanditiis quam et nihil quo quibusdam iste mollitia rem molestiae aperiam commodi consequuntur odit vel deserunt? Ea molestias aperiam, atque officia facilis, voluptatem minus totam explicabo vitae error ullam ex nobis architecto dignissimos eius. Expedita, cupiditate?</h1>
-                        </div>
-                </div>
+              </div>
+              
+              <!-- service left section -->
+
+              <!-- service right section -->
+
+              <div
+                class="uk-width-1-1@s uk-width-3-4@m service-right-content uk-padding-small uk-padding-remove-vertical service-blogserc-style"
+              >
+
+              <div class="calender uk-padding-small uk-padding-remove-vertical">
+                <h1>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  temporibus id, sit beatae reprehenderit, blanditiis quam et
+                  nihil quo quibusdam iste mollitia rem molestiae aperiam
+                  commodi consequuntur odit vel deserunt? Ea molestias aperiam,
+                  atque officia facilis, voluptatem minus totam explicabo vitae
+                  error ullam ex nobis architecto dignissimos eius. Expedita,
+                  cupiditate?
+                </h1>
+              </div>
+
+              </div>
+
+              <!-- service right section -->
+
             </div>
+          </div>
         </div>
-             
       </div>
     </div>
-
 
     <!-- footer section -->
 
@@ -463,7 +518,7 @@
                   <a href="/website-disclaimer.html">Website Disclaimer</a>
                 </li>
                 <li><a href="/knowledge-base.html">Knowledge Base</a></li>
-                <li><a href="#">Holiday List</a></li>
+                <li><a href="/holiday-list.html">Holiday List</a></li>
                 <li><a href="#">Partner With Us</a></li>
               </ul>
             </div>

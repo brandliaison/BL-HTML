@@ -24,6 +24,7 @@
   box-shadow: 1px 5px 10px 0px #0000001a;
   background-color: white;
   position: relative;
+  padding: 5px 0px;
 }
 
 .navbar .navbar-main img {
@@ -304,6 +305,36 @@ h3.main-color.uk-text-bold.uk-margin-left::after {
     max-width: 100%;
 }
 
+.about-main-container .uk-container {
+    max-width: 100%;
+}
+
+.social-dropdown {
+    background-color: rgba(13, 98, 154, 0.8);
+    color: white;
+    display: flex;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.social-dropdown i {
+    color: white;
+    font-size: 22px;
+    margin: 10px 23px;
+}
+
+.social-dropdown a:hover {
+    background-color: #0d629a;
+}
+
+.social-dropdown a {
+    transition: 1s linear;
+}
+
 @media screen and (max-width: 576px) {
     .navbar-main-logo img{
         max-width: 150px !important;
@@ -347,6 +378,10 @@ h3.main-color.uk-text-bold.uk-margin-left::after {
         height: 50vh;
         background-position: left;
         box-shadow: inset 800px 0px #ffffff36;
+    }
+
+    .shareonsocila {
+        display: none;
     }
 }
 
