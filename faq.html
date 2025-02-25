@@ -59,11 +59,26 @@
                   class="fa-brands fa-linkedin icon-white uk-padding-small uk-padding-remove-left"
                 ></i
               ></a>
-              <a href="#"
+              <a href="#" class="shareonsocila" uk-toggle="target: #dropdown-example"
                 ><i
                   class="fa-solid fa-share-nodes icon-white uk-padding-small uk-padding-remove-left"
                 ></i
               ></a>
+
+              <!-- Dropdown Menu -->
+            <div id="dropdown-example" class="uk-padding-remove" style="min-width: auto !important; background: transparent;" uk-dropdown="mode: click">
+              <div class="social-dropdown">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+              </div>
+            </div>
+
             </div>
             <div class="main-menu">
               <ul class="uk-nav uk-nav-default uk-flex">
@@ -379,44 +394,117 @@
     <div class="about-main-container">
       <div class="uk-container-expand custom-container uk-height-1-1">
         <div class="uk-text-center uk-margin-top uk-margin-bottom">
-            <h2 class="gray-color uk-text-bold uk-margin-small-bottom uk-margin-large-top">
-              <span class="main-color"> Privacy Policy </span>
-            </h2>
-          </div>
-          <form class="uk-search uk-search-default uk-width-1-1 uk-margin-bottom uk-margin-top">
-            <input class="uk-search-input uk-width-1-1" type="search" placeholder="Search..." aria-label="Search">
-            <button class="uk-search-icon-flip" uk-search-icon></button>
+          <h2
+            class="gray-color uk-text-bold uk-margin-small-bottom uk-margin-large-top"
+          >
+            <span class="main-color"> Privacy Policy </span>
+          </h2>
+        </div>
+        <form
+          class="uk-search uk-search-default uk-width-1-1 uk-margin-bottom uk-margin-top"
+        >
+          <input
+            class="uk-search-input uk-width-1-1"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+          <button class="uk-search-icon-flip" uk-search-icon></button>
         </form>
         <ul uk-accordion="multiple: true">
-            <li class="uk-open uk-background-muted">
-                <a class="uk-accordion-title mainsecond-background-color uk-box-shadow-medium uk-padding-small" href>Item 1</a>
-                <div class="uk-accordion-content uk-background-blend-darken uk-padding-small">
-                    <p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </li>
-            <li class="uk-open uk-background-muted">
-                <a class="uk-accordion-title mainsecond-background-color uk-box-shadow-medium uk-padding-small" href>Item 1</a>
-                <div class="uk-accordion-content uk-background-blend-darken uk-padding-small">
-                    <p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </li>
-            <li class="uk-open uk-background-muted">
-                <a class="uk-accordion-title mainsecond-background-color uk-box-shadow-medium uk-padding-small" href>Item 1</a>
-                <div class="uk-accordion-content uk-background-blend-darken uk-padding-small">
-                    <p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </li>
-            <li class="uk-open uk-background-muted">
-                <a class="uk-accordion-title mainsecond-background-color uk-box-shadow-medium uk-padding-small" href>Item 1</a>
-                <div class="uk-accordion-content uk-background-blend-darken uk-padding-small">
-                    <p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </li>
-        </ul>         
-             
+          <li class="uk-background-muted">
+            <a
+              class="uk-accordion-title mainsecond-background-color uk-box-shadow-medium uk-padding-small"
+              href="#"
+              >Item 1</a
+            >
+            <div
+              class="uk-accordion-content uk-background-blend-darken uk-padding-small"
+            >
+              <p class="uk-text-small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li class="uk-background-muted">
+            <a
+              class="uk-accordion-title mainsecond-background-color uk-box-shadow-medium uk-padding-small"
+              href="#"
+              >Item 2</a
+            >
+            <div
+              class="uk-accordion-content uk-background-blend-darken uk-padding-small"
+            >
+              <p class="uk-text-small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li class="uk-background-muted">
+            <a
+              class="uk-accordion-title mainsecond-background-color uk-box-shadow-medium uk-padding-small"
+              href="#"
+              >Item 3</a
+            >
+            <div
+              class="uk-accordion-content uk-background-blend-darken uk-padding-small"
+            >
+              <p class="uk-text-small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li class="uk-background-muted">
+            <a
+              class="uk-accordion-title mainsecond-background-color uk-box-shadow-medium uk-padding-small"
+              href="#"
+              >Item 4</a
+            >
+            <div
+              class="uk-accordion-content uk-background-blend-darken uk-padding-small"
+            >
+              <p class="uk-text-small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li class="uk-background-muted">
+            <a
+              class="uk-accordion-title mainsecond-background-color uk-box-shadow-medium uk-padding-small"
+              href="#"
+              >Item 5</a
+            >
+            <div
+              class="uk-accordion-content uk-background-blend-darken uk-padding-small"
+            >
+              <p class="uk-text-small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li class="uk-background-muted">
+            <a
+              class="uk-accordion-title mainsecond-background-color uk-box-shadow-medium uk-padding-small"
+              href="#"
+              >Item 6</a
+            >
+            <div
+              class="uk-accordion-content uk-background-blend-darken uk-padding-small"
+            >
+              <p class="uk-text-small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-
 
     <!-- footer section -->
 

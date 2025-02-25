@@ -60,11 +60,26 @@
                   class="fa-brands fa-linkedin icon-white uk-padding-small uk-padding-remove-left"
                 ></i
               ></a>
-              <a href="#"
+              <a href="#" class="shareonsocila" uk-toggle="target: #dropdown-example"
                 ><i
                   class="fa-solid fa-share-nodes icon-white uk-padding-small uk-padding-remove-left"
                 ></i
               ></a>
+
+              <!-- Dropdown Menu -->
+            <div id="dropdown-example" class="uk-padding-remove" style="min-width: auto !important; background: transparent;" uk-dropdown="mode: click">
+              <div class="social-dropdown">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+              </div>
+            </div>
+
             </div>
             <div class="main-menu">
               <ul class="uk-nav uk-nav-default uk-flex">
@@ -91,14 +106,15 @@
                   ></a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i class="fa-solid fa-earth-asia"></i>
+                  <a href="#"
+                    ><i class="fa-solid fa-earth-asia"></i>
                     <select id="example-select" name="options">
                       <option selected value="English">EN</option>
                       <option value="Hindi">HN</option>
                       <option value="French">FR</option>
                       <option value="Espanich">ES</option>
-                    </select></a>
+                    </select></a
+                  >
                 </li>
               </ul>
             </div>
@@ -106,7 +122,7 @@
         </div>
       </div>
       <div
-        class="navbar-main uk-padding-remove-horizontal"
+        class="navbar-main uk-padding-small uk-padding-remove-horizontal"
         uk-sticky
       >
         <div class="uk-container-expand custom-container">
