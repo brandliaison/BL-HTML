@@ -1,4 +1,4 @@
-@import url("styles.css");
+@import url("style.css");
 
 /* navigation style */
 
@@ -333,6 +333,44 @@ h3.main-color.uk-text-bold.uk-margin-left::after {
 
 .social-dropdown a {
     transition: 1s linear;
+}
+
+.table-of-content {
+    background-color: var(--graytwo);
+    padding: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.486);
+    border-radius: 5px;
+}
+
+.table-of-content a {
+    color: gray;
+    text-decoration: underline;
+}
+
+.blog-author {
+    background-color: var(--graytwo);
+    padding: 30px 100px;
+    margin: 30px 0px;
+    border-top: 2px dashed #afafaf;
+    border-bottom: 2px dashed #afafaf;
+}
+
+.blog-author-top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+}
+
+.blog-author-top::after {
+    content: "\f10d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    left: 0px;
+    position: absolute;
+    color: var(--maincolor);
+    font-size: 60px;
 }
 
 @media screen and (max-width: 576px) {

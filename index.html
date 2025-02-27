@@ -16,7 +16,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./custom.css" />
 
     <title>Document</title>
@@ -295,6 +294,7 @@
           <h5 class="gray-color uk-margin-top uk-text-bold">Partner Type*</h5>
           <form action="#" method="POST">
             <div class="radio-button-idv">
+              <div class="uk-flex uk-flex-center uk-flex-middle"> 
               <input
                 type="radio"
                 id="service-partner"
@@ -303,28 +303,34 @@
                 required
               /><br />
               <label for="partner-type">Service Partner</label>
+              </div>
+              <div class="uk-flex uk-flex-center uk-flex-middle">
               <input
                 type="radio"
                 id="channel-partner"
                 name="partner-type"
                 value="channel"
                 required
-              /><br />
+              />
               <label for="service-partner">Channel Partner</label>
+              </div>
             </div>
             <i class="gray-color uk-text-small"
               >Become Certification/Compliance Service Associate</i
             >
             <h5 class="gray-color uk-margin-top uk-text-bold">Entity Type*</h5>
             <div class="radio-button-idv uk-margin-bottom">
+              <div class="uk-flex uk-flex-center uk-flex-middle">
               <input
                 type="radio"
                 id="organization"
                 name="marketing-associate"
                 value="organization"
                 required
-              /><br />
+              />
               <label for="organization">Organization</label>
+              </div>
+              <div class="uk-flex uk-flex-center uk-flex-middle">
               <input
                 type="radio"
                 id="individual"
@@ -333,6 +339,7 @@
                 required
               />
               <label for="individual">Individual</label>
+              </div>
             </div>
 
             <div class="sideform-input">
@@ -1659,9 +1666,9 @@
   <!--End of Tawk.to Script-->
 
   <!-- my script is here -->
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
 
   <!-- UIkit JS -->
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js" defer></script>
 </html>
