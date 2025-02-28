@@ -367,10 +367,23 @@ h3.main-color.uk-text-bold.uk-margin-left::after {
     content: "\f10d";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    left: 0px;
+    left: -65px;
     position: absolute;
     color: var(--maincolor);
-    font-size: 60px;
+    font-size: 50px;
+    top: -20px;
+}
+
+.blog-author-top::before {
+    content: "\f10d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    right: -65px;
+    position: absolute;
+    color: var(--maincolor);
+    font-size: 50px;
+    top: -20px;
+    transform: rotatey(181deg);
 }
 
 @media screen and (max-width: 576px) {
@@ -420,6 +433,10 @@ h3.main-color.uk-text-bold.uk-margin-left::after {
 
     .shareonsocila {
         display: none;
+    }
+
+    .blog-author {
+        padding: 30px 70px;
     }
 }
 
